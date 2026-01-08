@@ -18,11 +18,24 @@ O usuário interage pelo terminal, escolhendo a opção desejada e digitando o v
 
 **2.** Configuração
 No arquivo Main.java, substitua:
-Client api = new Client("DIGITE_SUA_API_KEY_AQUI");
+Client api = new Client("Digite_sua_key");
 pela sua chave real da API.
 
 **3.** Certifique-se de que o projeto está organizado assim:
-ConversorMoeda tem um pom.xml e dentro de src/main/java está o Main.java.
+
+```text
+ConversorMoeda
+└─ src/
+   └─ main/java/com/user/converter/
+       ├─ api/
+       │   └─ Client.java
+       ├─ model/
+       │   └─ Converter.java
+       ├─ utility/
+       │   └─ Filter.java
+       └─ Main.java
+└─ pom.xml
+```
 
 **4.** No terminal, dentro da pasta do projeto:
 mvn clean compile
